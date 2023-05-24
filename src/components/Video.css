@@ -1,0 +1,62 @@
+.video {
+    box-shadow: 2px 1px lightgray;
+    border: 1px solid lightgray;
+    margin: 20px 0;
+    border-radius: 2px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .video .title {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .video:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .video:hover .video-overlay {
+    display: none;
+  }
+  
+  .video-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video:hover .video-controls {
+    opacity: 1;
+  }
+  
+  .video-list {
+    border-left: 1px solid lightgray;
+    grid-row: span 2;
+    padding: 0 20px;
+  }
+  
